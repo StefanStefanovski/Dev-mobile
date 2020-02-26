@@ -8,80 +8,114 @@
     tools:layout_editor_absoluteY="73dp">
 
     <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
+        android:layout_width="102dp"
+        android:layout_height="372dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:orientation="vertical"
-        tools:ignore="Orientation">
-    <EditText
-        android:id="@+id/NomEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nom"
-        app:layout_constraintBottom_toTopOf="@+id/PrenomEditText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <EditText
-        android:id="@+id/PrenomEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Prenom"
-        app:layout_constraintBottom_toTopOf="@+id/AgeEditText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NomEditText" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Nom"
+            android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/AgeEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Age"
-        app:layout_constraintBottom_toTopOf="@+id/TelephoneEditText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PrenomEditText" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Prenom"
+            android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/TelephoneEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number|phone"
-        android:text="Téléphone"
-        app:layout_constraintBottom_toTopOf="@+id/ValiderButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AgeEditText" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Age"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/ValiderButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Valider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TelephoneEditText" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Competence"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="404dp" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Telephone"
+            android:textSize="18sp" />
     </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="259dp"
+        android:layout_height="372dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints,Orientation"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/NomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/PrenomEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/PrenomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/AgeEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NomEditText" />
+
+        <EditText
+            android:id="@+id/AgeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/TelephoneEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PrenomEditText" />
+
+        <EditText
+            android:id="@+id/TelephoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/ValiderButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AgeEditText"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/TelephoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|phone"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
